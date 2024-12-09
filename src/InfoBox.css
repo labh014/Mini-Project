@@ -1,0 +1,22 @@
+/* body{
+    background-color:  #E6F2FF !important;
+  } */
+
+.infoBox{   
+    width: 300px;
+    margin: 0 auto; /* This centers the element horizontally */
+    transition: box-shadow 0.3s ease;
+}
+.infoBox:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style-type: none; /* Removes default list bullets */
+    padding: 0; /* Removes default padding */
+}
+
+ul li {
+    text-align: left; /* Aligns the text within list items to the left */
+}
+
