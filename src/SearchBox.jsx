@@ -5,11 +5,13 @@ import Alert from '@mui/material/Alert'; // Import for the alert
 import { useState } from 'react';
 import './SearchBox.css';
 
+
 export default function SearchBox({ updatedInfo }) {
     let [city, setCity] = useState("");
     let [error, setError] = useState(""); // State for error message
     let api_url = "https://api.openweathermap.org/data/2.5/weather";
-    let api_key = "8534edf1508885fcb9eb1e374a475fb2";
+
+    let api_key = import.meta.env.VITE_API_KEY;
 
     let handleWeatherInfo = async () => {
         try {
